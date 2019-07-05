@@ -119,7 +119,6 @@ def main(argv):
                 overlay.update(overlay_img.tobytes())
             if time.time() - start_time >= args.time:
                 break
-            time.sleep(0.1)
     finally:
         camera.stop_preview()
         camera.close()
